@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Menu = ({ id, complete, name, updateMenu, deleteMenu }) => (
+const Food = ({ id, complete, name, updateFood, deleteFood }) => (
   <div style={styles.flex}>
     <div style={styles.flex}>
       <Checkbox
         defaultChecked={complete}
-        onClick={() => updateMenu(id)}
+        onClick={() => updateFood(id)}
       />
       <div style={complete ? styles.complete : {}} className="center">
         <Header as="h2" style={{ marginLeft: "15px", }}>{ name }</Header>
@@ -37,4 +37,4 @@ const styles = {
   },
 };
 
-export default Menu;
+export default Food;

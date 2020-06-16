@@ -18,8 +18,8 @@ class MenuForm extends React.Component {
     return (
       <Form onSubmit={this.handleSubmit}>
         <Form.Input
-          label="Menu"
-          placeholder="Add A Menu"
+          label="Foods"
+          placeholder="Add A Food to Menu"
           required
           value={this.state.name}
           onChange={this.handleChange}
@@ -29,4 +29,4 @@ class MenuForm extends React.Component {
   }
 }
 
-export default MenuForm;
+export default FoodForm;
